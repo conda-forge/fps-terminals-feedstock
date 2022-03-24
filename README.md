@@ -1,7 +1,7 @@
 About fps-terminals
 ===================
 
-Home: https://github.com/jupyter-server/jupyverse/plugins/terminals
+Home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/terminals
 
 Package license: BSD-3-Clause
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fps-terminals-f
 
 Summary: An FPS plugin for the terminals API
 
-Development: https://github.com/jupyter-server/jupyverse/plugins/terminals
+Development: https://github.com/jupyter-server/jupyverse/tree/main/plugins/terminals
 
 Current build status
 ====================
