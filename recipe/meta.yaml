@@ -19,8 +19,7 @@ requirements:
     - pip
   run:
     - python
-    - fps <1
-    - fps-auth <1
+    - fps >=0.0.8,<1
     - websockets >=10,<11
     - pywinpty >=2,<3  # [win]
 
