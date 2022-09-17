@@ -17,6 +17,7 @@ requirements:
   host:
     - python
     - pip
+    - hatchling
   run:
     - python
     - fps >=0.0.8,<1
