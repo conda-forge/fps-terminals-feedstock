@@ -21,6 +21,7 @@ requirements:
   run:
     - python
     - fps >=0.0.8,<1
+    - fps-auth-base <1
     - websockets >=10,<11
     - pywinpty >=2,<3  # [win]
 
