@@ -1,5 +1,5 @@
 {% set name = "fps-terminals" %}
-{% set version = "0.0.44" %}
+{% set version = "0.0.46" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/fps_terminals-{{ version }}.tar.gz
-  sha256: 2f2ac5c3ad01bbfec0c83635d2502294ded8132cb67a89a462d4f6d77d85957e
+  sha256: d55399c159b13da61dc9e96b95e510e414f6dbaa59a48b3e95bc54850fd7f139
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
