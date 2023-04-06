@@ -23,10 +23,9 @@ requirements:
     - hatchling
   run:
     - python
-    - fps >=0.0.8,<1
-    - fps-auth-base <1
-    - websockets >=10,<11
-    - pywinpty >=2,<3  # [win]
+    - jupyverse-api >=0.1.2,<1
+    - websockets
+    - pywinpty  # [win]
 
 test:
   imports:
@@ -35,7 +34,7 @@ test:
 about:
   home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/terminals
   summary: An FPS plugin for the terminals API
-  keywords: jupyter, server, fastapi, pluggy, plugins
+  keywords: jupyter, server, fastapi, plugins
   dev_url: https://github.com/jupyter-server/jupyverse/tree/main/plugins/terminals
   license_file: COPYING.md
   license: BSD-3-Clause
