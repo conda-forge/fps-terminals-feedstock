@@ -1,11 +1,11 @@
-About fps-terminals
-===================
+About fps-terminals-feedstock
+=============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fps-terminals-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/jupyter-server/jupyverse/tree/main/plugins/terminals
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/fps-terminals-feedstock/blob/main/LICENSE.txt)
 
 Summary: An FPS plugin for the terminals API
 
