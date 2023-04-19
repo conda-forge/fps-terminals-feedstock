@@ -18,12 +18,12 @@ requirements:
     - python                                 # [build_platform != target_platform]
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
-    - python
+    - python >=3.8
     - pip
     - hatchling
   run:
-    - python
-    - jupyverse-api >=0.1.2,<1
+    - python >=3.8
+    - jupyverse-api >=0.1.4,<1
     - websockets
     - pywinpty  # [win]
 
