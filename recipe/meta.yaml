@@ -26,6 +26,7 @@ requirements:
     - jupyverse-api >=0.1.4,<1
     - websockets
     - pywinpty  # [win]
+    - anyio >=4,<5
 
 test:
   imports:
