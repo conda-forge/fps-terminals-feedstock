@@ -23,7 +23,7 @@ requirements:
     - hatchling
   run:
     - python
-    - jupyverse-api >=0.1.4,<1
+    - jupyverse-api >=0.7.0,<1
     - websockets
     - pywinpty  # [win]
     - anyio >=4,<5
