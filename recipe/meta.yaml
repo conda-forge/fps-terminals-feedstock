@@ -1,5 +1,5 @@
 {% set name = "fps-terminals" %}
-{% set version = "0.8.1" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fps_terminals-{{ version }}.tar.gz
-  sha256: 388728f9c88cc3a9201e3f0807454920a423d391c8a3a78b5ebea16fa4143c5b
+  sha256: 7ad0f9a3d66ea10a6c4dd17359702666e0ba2ad0c0430de47f8863ef24cef928
 
 build:
   number: 0
@@ -23,8 +23,7 @@ requirements:
     - hatchling
   run:
     - python
-    - jupyverse-api >=0.9.0,<0.10.0
-    - websockets
+    - jupyverse-api >=0.10.0,<0.11.0
     - pywinpty  # [win]
     - anyio >=4.8.0,<5.0.0
 
