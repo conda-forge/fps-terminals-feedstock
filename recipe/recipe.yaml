@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.9.7"
+  version: "0.10.0"
 
 package:
   name: fps-terminals
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/f/fps-terminals/fps_terminals-${{ version }}.tar.gz
-    sha256: 800076de7fda13bf9535b25c6b33d73e13e0088505902c4aa25f08ede02778ce
+    sha256: 8f7e0825d29c1c1a8135f7edb79d5f3a3177695b6da9da0b35082948e967a405
 
 build:
   number: 0
