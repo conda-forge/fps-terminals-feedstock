@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.9.7"
+  version: "0.10.1"
 
 package:
   name: fps-terminals
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/f/fps-terminals/fps_terminals-${{ version }}.tar.gz
-    sha256: 800076de7fda13bf9535b25c6b33d73e13e0088505902c4aa25f08ede02778ce
+    sha256: 6cc15cf2583c9e2a55e874ea03b10cb23828ebcadbad18590cebbf0ed7d038c0
 
 build:
   number: 0
@@ -23,10 +23,16 @@ requirements:
     - uv-build
   run:
     - python
-    - jupyverse-api >=0.14.0,<0.15.0
+    - anyio
+    - fastapi-core
+    - fps
+    - jupyverse-api >=0.15.0,<0.16.0
+    - jupyverse-auth >=0.2.0,<0.3.0
+    - jupyverse-terminals >=0.1.0,<0.2.0
     - if: win
       then:
         - pywinpty
+    - structlog
 
 tests:
   - python:
