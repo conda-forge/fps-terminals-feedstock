@@ -18,11 +18,11 @@ build:
 
 requirements:
   build:
+    - python
+    - uv-build
     - if: build_platform != target_platform
       then:
-        - python
         - cross-python_${{ target_platform }}
-        - uv-build
   host:
     - python
     - pip
