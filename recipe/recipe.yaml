@@ -12,11 +12,17 @@ source:
     sha256: 6cc15cf2583c9e2a55e874ea03b10cb23828ebcadbad18590cebbf0ed7d038c0
 
 build:
-  number: 0
+  number: 1
   script:
     - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
 
 requirements:
+  build:
+    - if: build_platform != target_platform
+      then:
+        - python
+        - cross-python_${{ target_platform }}
+        - uv-build
   host:
     - python
     - pip
