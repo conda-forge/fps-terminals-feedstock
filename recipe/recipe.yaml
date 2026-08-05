@@ -19,14 +19,14 @@ build:
 requirements:
   build:
     - python
-    - uv-build
+    - uv-build >=0.11.32,<0.12
     - if: build_platform != target_platform
       then:
         - cross-python_${{ target_platform }}
   host:
     - python
     - pip
-    - uv-build
+    - uv-build >=0.11.32,<0.12
   run:
     - python
     - anyio
