@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.11.0"
+  version: "0.11.1"
 
 package:
   name: fps-terminals
@@ -9,7 +9,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/f/fps-terminals/fps_terminals-${{ version }}.tar.gz
-    sha256: 6b624bef864ae5f7c3ddd6fe381487965e92f706e6e53c2cd707e625ae0d8c7d
+    sha256: c04a4eabcdd181b1d0950c926405bab6cc489886c1d6f289f1bc642b7b4ffc1a
 
 build:
   number: 0
@@ -36,6 +36,7 @@ requirements:
     - jupyverse-api >=0.15.0,<0.16.0
     - jupyverse-auth >=0.2.0,<0.3.0
     - jupyverse-terminals >=0.2.0,<0.3.0
+    - libghostty-py >=0.2.0,<0.3.0
     - if: win
       then:
         - pywinpty
